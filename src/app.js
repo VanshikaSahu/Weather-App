@@ -31,6 +31,6 @@ app.get("*" , (req, res) =>{
     res.render("404error");
 })
 
-app.listen(port, ()=>{
+app.listen(port, "0.0.0.0", ()=>{
     console.log("listening");
 })
