@@ -1,0 +1,224 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fig{
+    width:60rem;
+    height: 30rem;
+    margin-bottom: 50px;
+    
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-item{
+    width: 300px;
+    height: 300px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+.main_menu{
+    /* navbar */
+    background-color: var(--main-bg);
+    
+}
+.navbar{
+    color: white;
+    background-color: var(--main-bg);
+    padding: 2rem;
+}
+
+.navbar a{
+    /* anchor tag inside navbar */
+    color: white;
+    font-size: 1.8rem;
+    
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.navbar li{
+    margin-left: 20px;
+    /* to give space between the links  */
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.fa-snowflake{
+    color: var(--main-color);
+}
+
+/* main-header */
+.main_header_left{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_left h1{
+    font-size: 3rem;
+    margin: 1.5rem 0 4rem 0;
+}
+
+.main_header_left button{
+    font-size: 1.8rem;
+    border-radius: 2rem;
+    padding: 0.8rem 1.8rem;
+    color: white;
+    background-color: var(--main-color);
+    box-shadow: 0 8px 6px -6px #000;
+}
+
+button{
+    font-size: 1.8rem;
+    border-radius: 2rem;
+    padding: 0.8rem 1.8rem;
+    color: white;
+    background-color: var(--main-color);
+    box-shadow: 0 8px 6px -6px #000;
+}
+
+.main_header_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather{
+    color: var(--main-color);
+}
+
+/* Weather page css */
+
+/* 1). search bar */
+
+.search_bar{
+    width: 60%;
+    margin: 5rem auto;
+    position: relative;
+}
+
+.search_bar input[type = "text"]{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 1.5rem;
+    background-color: #1e272e;
+    border-radius: 3rem;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.search_bar input[type ="submit"]{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 10px;
+    padding: 1rem 1.8rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--main-color);
+}
+
+.search_bar input[type ="submit"]:hover{
+    color: var(--main-color);
+    background-color: white;
+}
+/* 2). Temperature box */
+.temp_info{
+    background-color: #323544;
+    border-radius: 1rem;
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #1e272e;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.top_layer p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_layer #city_output{
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    font-size: 7rem;
+    color: white;
+}
+
+.fa{
+    color: var(--main-color);
+}
+
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+
+/* footer  */
+footer{
+    margin-top: auto;
+    width: 100%;
+    background-color: var(--main-bg);
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    margin: 0;
+}
+
+
