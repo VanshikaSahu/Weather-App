@@ -2,6 +2,7 @@ const express = require("express");//We get express function
 const path = require("path");
 const app = express();
 const hbs = require("hbs");
+const port = process.env.Port || 8000
 
 //to use template engine
 app.set('view engine', 'hbs');
@@ -30,6 +31,6 @@ app.get("*" , (req, res) =>{
     res.render("404error");
 })
 
-app.listen("8000", ()=>{
+app.listen(port, ()=>{
     console.log("listening");
 })
