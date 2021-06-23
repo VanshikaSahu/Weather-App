@@ -2,7 +2,7 @@ const express = require("express");//We get express function
 const path = require("path");
 const app = express();
 const hbs = require("hbs");
-const port = process.env.Port || 8000
+const port = process.env.PORT || 8000
 
 //to use template engine
 app.set('view engine', 'hbs');
